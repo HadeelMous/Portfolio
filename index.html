@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    #<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <title>Hadeel Moustafa Portfolio</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body, h1, h2, h3, h4, h5 {
+            font-family: "Raleway", sans-serif;
+        }
+
+        body {
+            background-color: #f1f1f1;
+        }
+
+        .w3-card-4 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .w3-card-4 img {
+            flex: 1;
+            width:25%;
+            height: auto;
+            max-height: none; 
+        }
+
+        .w3-container {
+            flex: 2;
+            padding: 20px;
+        }
+
+        .highlighted-text {
+            font-size: 17.5px; /* Adjust the font size as needed */
+            color: #0d8f38; /* Change the text color to a contrasting color */
+        }
+
+        .typing-container {
+            height: 20px; /* Set a reasonable fixed height for the container */
+        }
+
+        .header-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .profile-image {
+            max-width: 150px;
+            border-radius: 50%;
+        }
+
+        .tagline {
+            margin-top: 20px;
+        }
+
+        .contact-links {
+            margin-top: 10px;
+        }
+
+        .contact-links a {
+            margin: 0 10px;
+            color: #f1f1f1;
+        }
+
+        .smaller-text {
+           font-size: 12px; /* Adjust the font size as needed */
+        }
+
+        /* Media query for screens with a maximum width of 768px (typical for mobile devices) */
+        @media (max-width: 768px) {
+            /* Change the flex-direction to column for smaller screens (e.g., mobile) */
+            .w3-card-4 {
+                flex-direction: column;
+            }
+
+            /* Adjust image size for mobile devices */
+            .w3-card-4 img {
+                width: 100%; /* Make the image take the full width of the card */
+                height: auto; /* Maintain aspect ratio */
+                max-width: none; /* Disable max-width on the image */
+            }
+        }
+
+    </style>
+</head>
+
+<body class="w3-light-grey">
+
+   <!-- Navigation Bar -->
+   <div class="w3-top w3-bar w3-dark-grey w3-card">
+        <a class="w3-bar-item w3-button" href="index.html">
+            <img src="images/hadeel.PNG" alt="Hadeel Moustafa" style="max-width: 30px; border-radius: 50%;">
+        </a>
+        <div class="w3-right"> <!--  w3-hide-small -->
+            <a href="index.html" class="w3-bar-item w3-button">Home</a>
+            <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+            <a href="about_me.html" class="w3-bar-item w3-button">About Me</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="aboutme" class="w3-container header-container w3-padding-32">
+        <img src="images/hadeel.PNG" alt="Hadeel Moustafa" class="profile-image">      
+        <h1><b>Hadeel Moustafa</b></h1>
+        <p class="tagline">Welcome to my <span class="w3-tag">data science</span> portfolio</p>
+        <div class="typing-container">
+            <p id="typing-text"></p>
+        </div>
+    </header>
+
+
+
+    <!-- Blog entries -->
+    <div id="projects">  </div>
+
+    <!-- Title for Projects -->
+    <div class="w3-container w3-center w3-padding-16">
+        <br>
+        <h2><b>Projects</b></h2>
+    </div>
+
+    <div class="w3-content" style="max-width:1400px">
+
+      <!-- Blog entry -->
+        <div class="w3-card-4 w3-margin w3-white">
+            <!-- Image -->
+            <img src="images\C1DB.png" alt="">
+            <div class="w3-container">
+                <!-- title with link -->
+                <h3><b><a href="html/project1.html">A systematic computational database for one-dimensional material</a></b></h3>
+                <!-- type & date -->
+                <h5> Ph.D. Project</h5>
+                <!-- description -->
+                <p>Systematically investigated the properties of 2000 one-dimensional materials using density functional theory (DFT) to explore, model, and predict their structural, thermodynamic, and electronic behavior. Leveraged experimental databases and machine learning to generate novel materials, discovering hundreds of stable 1D structures. This approach uncovered insights into material stability and potential applications in quantum computing, energy conversion, and gas atom binding.</p>
+                <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <!-- read more -->
+                        <a href="html/project1.html"><p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+
+    <!-- Blog entry -->
+        <div class="w3-card-4 w3-margin w3-white">
+            <!-- Image -->
+            <img src="images\1D.png" alt="">
+            <div class="w3-container">
+                <!-- title with link -->
+                <h3><b><a href="html/project2.html">Chemisorption of gas atoms on one-dimensional transition-metal halides</a></b></h3>
+                <!-- type & date -->
+                <h5> Ph.D. Project</h5>
+                <!-- description -->
+                <p>Explored the chemisorption of hydrogen and oxygen on one-dimensional transition-metal halides (Ti, Zr, Hf-based) using computational methods. Investigated materials with a three-fold symmetry structure, examining how gas atoms bind to their surfaces. Found that chemisorption significantly alters the electronic properties, including Fermi energy shifts, and correlates with the work function of the clean systems, highlighting the critical role of electron transfer in the bonding process. These findings open the door to discovering new compounds with valuable chemical properties.</p>
+                <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <!-- read more -->
+                        <a href="html/project2.html"><p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+
+    <!-- Blog entry -->
+        <div class="w3-card-4 w3-margin w3-white">
+            <!-- Image -->
+            <img src="images\Se3.png" alt="">
+            <div class="w3-container">
+                <!-- title with link -->
+                <h3><b><a href="html/project3.html">Selenium and the role of defects for photovoltaic applications</a></b></h3>
+                <!-- type & date -->
+                <h5> Ph.D. Project</h5>
+                <!-- description -->
+                <p>Investigated the light absorption properties of one-dimensional selenium for photovoltaic applications using first-principles calculations. Studied pristine selenium's band gap and optical absorption, along with the impact of intrinsic and extrinsic defects on electronic properties. Found that while intrinsic vacancies have minimal effects on performance, extrinsic defects introduce deep levels that increase non-radiative recombination, limiting efficiency. These insights suggest optimizing synthesis conditions to minimize extrinsic impurities can significantly enhance selenium-based solar cells.</p>
+                <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <!-- read more -->
+                        <a href="html/project3.html"><p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+
+            <!-- Blog entry -->
+        <div class="w3-card-4 w3-margin w3-white">
+            <!-- Image -->
+            <img src="images\2D.png" alt="">
+            <div class="w3-container">
+                <!-- title with link -->
+                <h3><b><a href="html/project4.html">High-throughput computational screening for two-dimensional magnetic materials</a></b></h3>
+                <!-- type & date -->
+                <h5> Ph.D. Project</h5>
+                <!-- description -->
+                <p>Performed high-throughput computational screening of bulk materials to identify two-dimensional magnetic compounds using data from crystal structure databases. Applied a geometric descriptor to select exfoliable materials, discovering 85 ferromagnetic and 61 antiferromagnetic candidates. Calculated magnetic exchange, anisotropy parameters, and Curie temperatures using density functional theory, with results aligning well with known 2D ferromagnets. Identified 10 new potentially exfoliable ferromagnets and 18 antiferromagnetic insulators with strong exchange coupling, opening new avenues for magnetic material applications.</p>
+                <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <!-- read more -->
+                        <a href="html/project4.html"><p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+
+        
+            <!-- Blog entry -->
+        <div class="w3-card-4 w3-margin w3-white">
+            <!-- Image -->
+            <img src="images\glucose.png" alt="">
+            <div class="w3-container">
+                <!-- title with link -->
+                <h3><b><a href="html/project5.html">13C NMR Chemical Shifts of Saccharides in the Solid State</a></b></h3>
+                <!-- type & date -->
+                <h5> Master Thesis</h5>
+                <!-- description -->
+                <p>Explore the 13C NMR chemical shifts of saccharides in the solid state using density functional theory (DFT). By modeling mono-, di-, and trisaccharides, I analyzed how glycosidic linkages and crystal water affect NMR shifts. The study revealed significant chemical shift changes at glycosidic linkage atoms and nearby atoms influenced by crystal water. These findings provide valuable insights into the structural factors affecting NMR signals in saccharides, paving the way for further research into spin-spin coupling and other NMR properties.</p>
+                <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <!-- read more -->
+                        <a href="html/project5.html"><p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+
+                    <!-- Blog entry -->
+        <div class="w3-card-4 w3-margin w3-white">
+            <!-- Image -->
+            <img src="images\theophylline.png" alt="">
+            <div class="w3-container">
+                <!-- title with link -->
+                <h3><b><a href="html/project6.html">Determining short-lived solid forms during phase transformations using molecular dynamics</a></b></h3>
+                <!-- type & date -->
+                <h5> Master Thesis</h5>
+                <!-- description -->
+                <p>Explored the dehydration phase transition of theophylline using molecular dynamics simulations. Combined theoretical and experimental techniques, including PXRD and solid-state NMR, to identify short-lived metastable crystal phases. Found that these high-energy forms play a critical role in the phase transition mechanism, with water channel closure and molecular reorganization driving the transformation. The study highlights the significance of metastable phases, often overlooked in traditional experimental approaches.</p>
+                <div class="w3-row">
+                    <div class="w3-col m8 s12">
+                      <!-- read more -->
+                        <a href="html/project6.html"><p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        
+    <!-- Footer -->
+    <footer class="w3-container w3-dark-grey w3-padding-16 w3-margin-top smaller-text">
+        <!-- Contacts -->
+        <div class="contact-links">
+            <i class="fa fa-envelope"></i> <a href="mailto:hadeel94.9@hotmail.com">hadeel94.9@hotmail.com</a>
+        </div>
+        <div class="contact-links">
+            <i class="fa fa-linkedin-square"></i> <a href="https://www.linkedin.com/in/hadeel-moustafa/">hadeel-moustafa</a>
+        </div>
+        <div class="contact-links">
+            <i class="fa fa-github"></i> <a href="https://github.com/Hadeel-Moustafa">Hadeel-Moustafa</a>
+        </div>
+        <!-- Year -->
+        <p>&copy; <span id="currentYear"></span> Hadeel Moustafa</p>
+    </footer>
+
+    <!-- Script for the year -->
+    <script>
+        // JavaScript code to update the year
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
+
+    <!-- Script for the typing -->
+    <script>
+        // Initialize typed.js
+        var options = {
+            strings: ["I'm a Data Scientist", "Passionate about data", "Analyzing trends", "Building models",""],
+            typeSpeed: 50, // typing speed in milliseconds
+            backSpeed: 25, // backspacing speed in milliseconds
+            backDelay: 1500, // delay before starting to backspace
+            showCursor: false, // show blinking cursor
+            cursorChar: "|", // cursor character
+            onComplete: function (self) {
+                // Reset the Typed instance to start again
+                self.reset();
+            },
+        };
+        var typed = new Typed("#typing-text", options);
+    </script>
+    
+</body>
+</html>

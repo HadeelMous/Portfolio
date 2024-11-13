@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13C NMR Chemical Shifts of Saccharides in the Solid State</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body, h1, h2, h3, h4, h5 {
+            font-family: "Raleway", sans-serif;
+        }
+
+        .header-with-margin {
+            margin: 40px; /* Set the margin to match the cards */
+            background-color: #f1f1f1;
+        }
+
+        .w3-card-4 {
+            display: flex;
+            flex-direction: row;
+            margin: 20px; /* Adjust margin as needed */
+            background-color: white; /* Set the background color */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+            border-radius: 4px; /* Add rounded corners */
+        }
+
+        .w3-card-4 img {
+            flex: 1;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .w3-container {
+            flex: 2;
+            padding: 20px;
+            text-align: left; /* Align text to the left */
+        }
+
+        .highlighted-text {
+            font-size: 17.5px;
+            color: #0d8f38;
+        }
+
+        .contact-links {
+            margin-top: 10px;
+        }
+
+        .contact-links a {
+            margin: 0 10px;
+            color: #f1f1f1;
+        }
+
+        .smaller-text {
+           font-size: 12px; /* Adjust the font size as needed */
+        }
+
+    </style>
+</head>
+
+<body class="w3-light-grey">
+    <!-- Navigation Bar -->
+    <div class="w3-top w3-bar w3-dark-grey w3-card header-without-margin" style="width: 100%;">
+        <a class="w3-bar-item w3-button" href="../index.html">
+            <img src="../images/hadeel.PNG" alt="Hadeel Moustafa" style="max-width: 30px; border-radius: 50%;">
+        </a>
+        <div class="w3-right"> <!--w3-hide-small-->
+            <a href="../index.html" class="w3-bar-item w3-button">Home</a>
+            <a href="../index.html#projects" class="w3-bar-item w3-button">Projects</a>
+            <a href="../about_me.html" class="w3-bar-item w3-button">About Me</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-container w3-center w3-padding-32 header-with-margin" style="margin-top: 50px;">
+        <img src="..\images\glucose_.png" alt="" style="max-width: 150px; border-radius: 50%;">
+        <h1><b>13C NMR Chemical Shifts of Saccharides in the Solid State</b></h1>
+        <p style="text-align: left;"><strong>Overview:</strong></p>
+        <p style="text-align: left;">This project investigates the changes in 13C NMR chemical shifts of mono-, di-, and trisaccharides in the solid state using density functional theory (DFT). The focus is on understanding how glycosidic linkages and crystal water molecules influence these chemical shifts.</p>
+        <p style="text-align: left;"><strong>Data Sources:</strong></p>
+        <p style="text-align: left;">Experimental crystal structures of saccharides from the literature were optimized computationally. NMR data for known systems were used to establish a correlation between calculated shielding constants and experimental chemical shifts.</p>
+        <p style="text-align: left;"><strong>Tools and Technologies Used:</strong></p>
+        <p style="text-align: left;">The chemical shifts were calculated using density functional theory (DFT) combined with the gauge-including projector augmented wave (GIPAW) method, implemented in the CASTEP program.</p>
+        <p style="text-align: left;"><strong>Key Findings:</strong></p>
+        <p style="text-align: left;">Significant changes in 13C NMR chemical shifts (up to 14 ppm) occur at glycosidic linkage atoms when transitioning from monosaccharides to disaccharides. Crystal water molecules also affect nearby atoms, though the shifts (2-5 ppm) are smaller. No simple correlation between bond angles, distance to crystal water, and chemical shifts was found.</p>
+            <!-- Add more key findings as needed -->
+        </ul>
+        <p style="text-align: left;"><strong>Learn More:</strong></p>
+        <p style="text-align: left;">For a detailed exploration of this project please refer to the <a href="https://www.dropbox.com/home/13C%20NMR%20Chemical%20Shifts%20of%20Saccharides">paper</a>.</p>
+    </header>
+
+
+    <!-- Footer -->
+    <footer class="w3-container w3-dark-grey w3-padding-16 w3-margin-top smaller-text">
+        <!-- Contacts -->
+        <div class="contact-links">
+            <i class="fa fa-envelope"></i> <a href="mailto:hadeel94.9@hotmail.com">hadeel94.9@hotmail.com</a>
+        </div>
+        <div class="contact-links">
+            <i class="fa fa-linkedin-square"></i> <a href="https://www.linkedin.com/in/hadeel-moustafa/">hadeel-moustafa</a>
+        </div>
+        <div class="contact-links">
+            <i class="fa fa-github"></i> <a href="https://github.com/Hadeel-Moustafa">Hadeel-Moustafa</a>
+        </div>
+        <!-- Year -->
+        <p>&copy; <span id="currentYear"></span> Hadeel Moustafa</p>
+    </footer>
+    
+    <!-- Script for the year -->
+    <script>
+        // JavaScript code to update the year
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High-throughput computational screening for two-dimensional magnetic materials</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body, h1, h2, h3, h4, h5 {
+            font-family: "Raleway", sans-serif;
+        }
+
+        .header-with-margin {
+            margin: 40px; /* Set the margin to match the cards */
+            background-color: #f1f1f1;
+        }
+
+        .w3-card-4 {
+            display: flex;
+            flex-direction: row;
+            margin: 20px; /* Adjust margin as needed */
+            background-color: white; /* Set the background color */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+            border-radius: 4px; /* Add rounded corners */
+        }
+
+        .w3-card-4 img {
+            flex: 1;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .w3-container {
+            flex: 2;
+            padding: 20px;
+            text-align: left; /* Align text to the left */
+        }
+
+        .highlighted-text {
+            font-size: 17.5px;
+            color: #0d8f38;
+        }
+
+        .contact-links {
+            margin-top: 10px;
+        }
+
+        .contact-links a {
+            margin: 0 10px;
+            color: #f1f1f1;
+        }
+
+        .smaller-text {
+           font-size: 12px; /* Adjust the font size as needed */
+        }
+
+    </style>
+</head>
+
+<body class="w3-light-grey">
+    <!-- Navigation Bar -->
+    <div class="w3-top w3-bar w3-dark-grey w3-card header-without-margin" style="width: 100%;">
+        <a class="w3-bar-item w3-button" href="../index.html">
+            <img src="../images/hadeel.PNG" alt="Hadeel Moustafa" style="max-width: 30px; border-radius: 50%;">
+        </a>
+        <div class="w3-right"> <!--w3-hide-small-->
+            <a href="../index.html" class="w3-bar-item w3-button">Home</a>
+            <a href="../index.html#projects" class="w3-bar-item w3-button">Projects</a>
+            <a href="../about_me.html" class="w3-bar-item w3-button">About Me</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="w3-container w3-center w3-padding-32 header-with-margin" style="margin-top: 50px;">
+        <img src="..\images\2D_.png" alt="" style="max-width: 150px; border-radius: 50%;">
+        <h1><b>High-throughput computational screening for two-dimensional magnetic materials</b></h1>
+        <p style="text-align: left;"><strong>Overview:</strong></p>
+        <p style="text-align: left;">This project screens bulk materials for two-dimensional (2D) magnetic compounds using computational methods. The goal is to identify exfoliate materials with potential magnetic applications, focusing on their magnetic properties such as exchange, anisotropy, and Curie temperature.</p>
+        <p style="text-align: left;"><strong>Data Sources:</strong></p>
+        <p style="text-align: left;">Data was sourced from the Inorganic Crystal Structure and Crystallography Open Database. 4264 materials were initially considered based on their structure and magnetic potential.</p>
+        <p style="text-align: left;"><strong>Tools and Technologies Used:</strong></p>
+        <p style="text-align: left;">We used a geometric descriptor to filter exfoliate materials and density functional theory (DFT) to compute magnetic properties, including exchange interactions, anisotropy, and Curie temperatures. Classical Monte Carlo simulations were employed to model magnetic behavior.</p>
+        <p style="text-align: left;"><strong>Key Findings:</strong></p>
+        <p style="text-align: left;">The screening identified 85 ferromagnetic and 61 antiferromagnetic 2D materials. Of these, 10 new ferromagnets and 18 antiferromagnetic insulators with strong magnetic properties were discovered. The Curie temperature calculations matched well with experimental values for known materials.</p>
+            <!-- Add more key findings as needed -->
+        </ul>
+        <p style="text-align: left;"><strong>Learn More:</strong></p>
+        <p style="text-align: left;">For a detailed exploration of this project, including methodologies, detailed results, code, and implications, please refer to the <a href="https://www.dropbox.com/home/High-throughput%20computational%20screening%20for%20two-dimensional%20magnetic%20materials">paper</a>.</p>
+    </header>
+
+
+    <!-- Footer -->
+    <footer class="w3-container w3-dark-grey w3-padding-16 w3-margin-top smaller-text">
+        <!-- Contacts -->
+        <div class="contact-links">
+            <i class="fa fa-envelope"></i> <a href="mailto:hadeel94.9@hotmail.com">hadeel94.9@hotmail.com</a>
+        </div>
+        <div class="contact-links">
+            <i class="fa fa-linkedin-square"></i> <a href="https://www.linkedin.com/in/hadeel-moustafa/">hadeel-moustafa</a>
+        </div>
+        <div class="contact-links">
+            <i class="fa fa-github"></i> <a href="https://github.com/Hadeel-Moustafa">Hadeel-Moustafa</a>
+        </div>
+        <!-- Year -->
+        <p>&copy; <span id="currentYear"></span> Hadeel Moustafa</p>
+    </footer>
+    
+    <!-- Script for the year -->
+    <script>
+        // JavaScript code to update the year
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
